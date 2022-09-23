@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+android:id="@+id/swipelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:dragEdge="right"
+    android:background="#FB7E86"
+    app:mode="same_level"
+    >
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/btndelete"
+            android:src="@drawable/deleteicn"
+            android:background="@drawable/rbtnbc"/>
+        <ImageButton
+            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnupdate"
+            android:src="@drawable/blackpen"
+
+            android:background="@drawable/rbtnbc"
+            android:backgroundTint="#E8E3E3"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtview"
+        android:padding="20dp"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 : Anees Ahmad : anees@gmail.com : 03482983385 : Malik"
+        android:textColor="#D1CECE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#EC878D"/>
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

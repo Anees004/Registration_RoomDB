@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpact"
+
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fullscr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/upd_txttop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signupbcrd"
+            android:padding="20dp"
+            android:text="Update Record"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/upd_txtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boxshape"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A1A1"
+            app:layout_constraintBottom_toTopOf="@+id/upd_txtname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_txttop" />
+        <EditText
+            android:id="@+id/upd_txtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boxshape"
+            android:hint="fullname"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A1A1"
+            app:layout_constraintBottom_toTopOf="@+id/upd_txtemail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_txtid" />
+
+        <EditText
+            android:id="@+id/upd_txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boxshape"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A1A1"
+            app:layout_constraintBottom_toTopOf="@+id/upd_mbnbr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_txtname" />
+
+        <EditText
+            android:id="@+id/upd_mbnbr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boxshape"
+            android:hint="mobile number"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A1A1"
+            app:layout_constraintBottom_toTopOf="@+id/upd_passwrdd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_txtemail" />
+
+        <EditText
+            android:id="@+id/upd_passwrdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boxshape"
+            android:hint="password"
+            android:inputType="text"
+            android:padding="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A1A1"
+            app:layout_constraintBottom_toTopOf="@+id/upd_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_mbnbr" />
+
+
+        <Button
+            android:id="@+id/upd_btnsave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/buttonbackground"
+            android:padding="14dp"
+            android:text="Save Changings"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/bottomstyle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_passwrdd" />
+
+
+        <TextView
+            android:id="@+id/bottomstyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/signupdwnbcrd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
